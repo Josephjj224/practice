@@ -7,8 +7,13 @@ def lcm(a,b):
         if a * i in target:
             return a * i
             break
+        if b * i in target:
+            return b * i
+            break
+
         target.append(i*b)
-    return 
+        target.append(i*a)
+    return -1
 
 
 a, b = map(int, input().split())
