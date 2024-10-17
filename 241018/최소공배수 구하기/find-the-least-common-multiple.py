@@ -1,7 +1,7 @@
 target =[]
 
 def lcm(a,b):
-    for i in range(1, 100):
+    for i in range(1, max(a,b) +1):
         if a * i in target:
             return a * i
             break
