@@ -1,9 +1,10 @@
 target =[]
 
 def lcm(a,b):
-    for i in range(1, min(a,b) + 1):
+    for i in range(1, 100):
         if a * i in target:
             return a * i
+            break
         target.append(i*b)
     return 0
 
